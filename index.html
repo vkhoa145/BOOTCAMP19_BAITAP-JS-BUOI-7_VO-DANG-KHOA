@@ -12,42 +12,291 @@
 </head>
 
 <body>
-    <h1>Bài tập luyện mảng</h1>
-   
-    <!-- cho người dùng nhập vào số nguyên và xuất thành mãng. Cho mãng đó thực hiện những lệnh theo yêu cầu -->
-    <div class="bai1-container">
+    <h1 class="m-2 p-2">Bài tập luyện mảng</h1>
+    <!-- Cho người dùng nhập vào dãy số nguyên -->
+    <div class="mang-container">
         <div class="card w-50 mx-auto">
-            <div class="card-header text-center">
-                Bài 2ho nhân viên
+            <div class="card-header text-center bg-danger text-white">
+                Default Array
             </div>
             <div class="card-body">
                 <div class="form-group">
-                    <!-- Nhập số ngày công của nhân viên -->
-                  <label for="">Số ngày làm việc của nhân viên</label>
-                  <input type="text" name="" id="daysOfWork" class="form-control">
-                  
-                </div>
-                <div class="form-group">
-                    <!-- Nhập số lương nhân viên -->
-                  <label for="">Lương trong 1 ngày của nhân viên</label>
-                  <input type="text" name="" id="wage" class="form-control">
-                  
+                    <!-- Inputing default array -->
+                    <label for="">Please input array as form : n1,n2,n3,n4....</label>
+                    <input type="text" name="" id="defaultArray" class="form-control">
+
                 </div>
                 <!-- Submit button -->
                 <div class="text-center">
-                    <button id="pay" class="btn btn-primary">Tính lương</button>
+                    <button id="arrayDisplay" class="btn btn-primary">Displaying Insert Array</button>
                 </div>
                 <!-- Display result -->
-                <div id="wage-wrapper" style="display: none;" class="text-center">
-                    <p>Total wages</p>
-                    <p id="wage-result"></p>
+                <div id="default-wrapper" style="display: none;" class="text-center">
+                    <p>Default array</p>
+                    <p id="defaultArray-result"></p>
 
                 </div>
             </div>
-            
         </div>
+        <br>
+        <!-- Tính tổng các số dương trong mảng  -->
+        <div class="bai1-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Total Positive Number in Default Array
+                </div>
+                <div class="card-body">
 
-    <script src="./index.js"></script>
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai1-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai1-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>Sum of Positive Number</p>
+                        <p id="bai1-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Đếm số lượng số dương trong mảng -->
+        <div class="bai2-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Counting Positive Number in Default Array
+                </div>
+                <div class="card-body">
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai2-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai2-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>Total Positive Numbers</p>
+                        <p id="bai2-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Tìm số nhỏ nhất trong mảng -->
+        <div class="bai3-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Finding the Minimum Number
+                </div>
+                <div class="card-body">
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai3-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai3-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>Minimum Number</p>
+                        <p id="bai3-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Tìm số dương nhỏ nhất trong mảng -->
+        <div class="bai4-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Finding the Minimum Positive Number
+                </div>
+                <div class="card-body">
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai4-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai4-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>Minimum Positive Number</p>
+                        <p id="bai4-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1 -->
+        <div class="bai5-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Finding the Last Positive Number Otherwise Printing -1 
+                </div>
+                <div class="card-body">
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai5-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai5-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>Last Positive Number</p>
+                        <p id="bai5-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Đổi chỗ 2 giá trị trong mảng theo vị trí ( Cho nhập vào 2 vị trí muốn đổi chỗ giá trị \) -->
+        <div class="bai5-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Finding the Last Positive Number Otherwise Printing -1 
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <!-- Inputing position 1 -->
+                        <label for="">Please input first position</label>
+                        <input type="text" name="" id="first-position" class="form-control">
+    
+                    </div>
+                    <div class="form-group">
+                        <!-- Inputing position 2 -->
+                        <label for="">Please input second position</label>
+                        <input type="text" name="" id="second-position" class="form-control">
+    
+                    </div>
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai6-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai6-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>New Array</p>
+                        <p id="bai6-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+         <!-- Sắp xếp mảng theo thứ tự tăng dần -->
+         <div class="bai7-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Sorting Array from minimum to maximum
+                </div>
+                <div class="card-body">
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai7-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai7-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>New Array</p>
+                        <p id="bai7-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về -1 -->
+        <div class="bai8-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Find The First Integer in Array
+                </div>
+                <div class="card-body">
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai8-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai8-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>Result</p>
+                        <p id="bai8-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên -->
+        <div class="bai9-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Counting Integer Numbers in Real Number Array
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <!-- Inputing  -->
+                        <label for="">Please new real number array</label>
+                        <input type="text" name="" id="real-array" class="form-control">
+    
+                    </div>
+                 
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai9-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai9-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>New Array</p>
+                        <p id="bai9-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--So sánh số lượng số dương và số aam xem số lượng nào nhiều hơn--> -->
+        <div class="bai10-container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center">
+                    Comparising between positive and negative number
+                </div>
+                <div class="card-body">
+
+                    <!-- Submit button -->
+                    <div class="text-center">
+                        <button id="bai10-click" class="btn btn-primary">CLICK</button>
+                    </div>
+                    <!-- Display result -->
+                    <div id="bai10-wrapper" style="display: none;" class="text-center">
+
+
+                        <p>Result</p>
+                        <p id="bai10-result"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="./index.js"></script>
 </body>
 
 </html>
